@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Wayfinder</title>
+    <style>
+        /* General page styling */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff; /* White text for better contrast */
+        }
+
+        /* Background image styling */
+        body {
+            background-image: url('aboutbgp.jpg'); /* Replace with your actual image file name */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Content container styling */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Add a black overlay with transparency */
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 900px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* Section styling */
+        .section {
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Quote styling */
+        .quote {
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        /* Button styling */
+        .btn-main {
+            background-color: #1a73e8; /* Light blue button */
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn-main:hover {
+            background-color: #135bb6; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main description section -->
+        <div class="section">
+            <h1>About Wayfinder</h1>
+            <p>
+                Welcome to Wayfinder! Our mission is to help you navigate your city with ease by recommending public transportation options and affordable travel services like taxis, buses, and trains.
+            </p>
+        </div>
+
+        <!-- Added motivational quotes -->
+        <div class="section">
+            <div class="quote">
+                "Explore, Discover, Navigate. Wayfinder is your one-stop navigation solution."
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="quote">
+                "Welcome to Wayfinder, Find the easiest public transportation routes, discover new destinations, and navigate with confidence."
+            </div>
+        </div>
+
+        <!-- More detailed explanation about Wayfinder -->
+        <div class="section">
+            <p>
+                Wayfinder is here to help you discover the best transportation routes. Whether you're a student new to the city or someone looking for the most cost-effective way to travel, Wayfinder compares different public transportation options so you can make an informed choice. Find out which mode of transport is cheaper, faster, and most convenient to get to your destination.
+            </p>
+        </div>
+
+        <!-- Button to redirect to Aside2test.html -->
+        <button class="btn-main" onclick="window.location.href='Aside2test.html';">Explore Public Transport Options</button>
+    </div>
+
+</body>
+</html>
