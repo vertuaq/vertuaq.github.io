@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Recommendations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #444444;
+        }
+        header {
+            background: #ADD8E6;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 10px 0;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: #ffffff;
+        }
+        .testimonial {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Public Transport Recommendations</h1>
+    <nav>
+        <a href="#public-transport">Public Transport</a>
+        <a href="#taxis">Taxis</a>
+        <a href="#trains">Trains</a>
+        <a href="#buses">Buses</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="public-transport">
+        <h2>Public Transport</h2>
+        <img src="publictrans1.jpg">
+        <p>Public transport is a cost-effective and environmentally friendly way to commute. Using services like taxis, trains, or buses can help reduce traffic congestion, cut down on travel expenses, and make navigating the city easier for both locals and visitors.</p>
+    </section>
+
+    <section id="taxis">
+        <h2>Taxis</h2>
+        <img src="taxi1.jpg" alt="Taxis">
+        <p>Taxis are a reliable mode of transport, especially in areas where public buses or trains might not be readily available. They offer point-to-point convenience, allowing you to travel directly to your destination without the need for transfers. Whether you're commuting to work or heading to a social gathering, taxis provide flexibility and comfort for short trips.</p>
+    </section>
+
+    <section id="trains">
+        <h2>Trains</h2>
+        <img src="train1.jpg" alt="Trains">
+        <p>Trains are one of the fastest ways to travel across longer distances within cities or between different towns. They are ideal for avoiding road traffic and are often more punctual than other modes of transport. With extensive networks in many regions, trains offer an affordable and efficient way to move around, especially during peak hours.</p>
+    </section>
+
+    <section id="buses">
+        <h2>Buses</h2>
+        <img src="bus1.jpg" alt="Buses">
+        <p>Buses are the backbone of public transportation in many cities, offering affordable and accessible travel options. They are perfect for commuting within city limits, connecting residential areas to major commercial and business districts. With frequent stops and affordable pricing, buses provide a reliable option for daily commuters and occasional travelers alike.</p>
+    </section>
+
+    <section id="testimonials">
+        <h2>User Testimonials</h2>
+        <div class="testimonial">
+            <p><strong>Thandolwethu Gumede:</strong> "I have been commuting to my job with taxis for over five years now, and I just recently found out that I can take a bus at a cheaper price. If this app existed earlier, I would've found out much sooner and I could've saved a lot of money!"</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Buhle Khoza:</strong> "I am a student and new to Durban. Although I use Google Maps to help me find places like restaurants, it doesn't tell me which taxi or bus I can take to get there. Having an app like this would be so convenient."</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 WayFinder. All rights reserved.</p>
+</footer>
+
+<script>
+    // Simple JavaScript to enhance interactivity
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            const sectionId = this.getAttribute('href').substring(1);
+            const section = document.getElementById(sectionId);
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
