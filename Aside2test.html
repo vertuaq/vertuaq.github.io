@@ -53,6 +53,25 @@
             border-radius: 5px;
             margin: 10px 0;
         }
+        /* Button Styling */
+        .btn-lost {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        /* Button Hover Animation */
+        .btn-lost:hover {
+            background-color: #87CEFA;
+        }
     </style>
 </head>
 <body>
@@ -71,7 +90,7 @@
 <div class="container">
     <section id="public-transport">
         <h2>Public Transport</h2>
-        <img src="publictrans1.jpg">
+        <img src="publictrans1.jpg" alt="Public Transport">
         <p>Public transport is a cost-effective and environmentally friendly way to commute. Using services like taxis, trains, or buses can help reduce traffic congestion, cut down on travel expenses, and make navigating the city easier for both locals and visitors.</p>
     </section>
 
@@ -101,6 +120,9 @@
         <div class="testimonial">
             <p><strong>Buhle Khoza:</strong> "I am a student and new to Durban. Although I use Google Maps to help me find places like restaurants, it doesn't tell me which taxi or bus I can take to get there. Having an app like this would be so convenient."</p>
         </div>
+
+        <!-- "Are you lost?" Button -->
+        <a href="https://maps.google.com" class="btn-lost" target="_blank">Are you lost?</a>
     </section>
 </div>
 
